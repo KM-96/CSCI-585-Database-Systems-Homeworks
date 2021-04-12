@@ -18,9 +18,6 @@
 * At the end of the curriculum, students will be required to rate their instructors, courses, and projects, using a single score for each (one to five stars).
 * Follow [this](http://bytes.usc.edu/cs585/s20_db0ds1ml2agi/hw/HW1/index.html) to see the full problem statement description on the course website.
 
-## ER Diagram
-<img src="" height="800" width="1000"/>
-
 ## ASSUMPTIONS:
 
 ### STUDENT table:
