@@ -1,0 +1,63 @@
+LINK TO FIDDLE:
+
+https://jsfiddle.net/KrishnaManojMaddipatla/shtqer61/47/
+
+
+JAVASCRIPT CODE:
+
+initMap();    
+
+var data = {"coordinates":[
+  {"latitude":34.020038, "longitude":-118.283723},
+  {"latitude":34.021239, "longitude":-118.284023},
+  {"latitude":34.021835, "longitude":-118.282958},
+  {"latitude":34.019157, "longitude":-118.285565},
+  {"latitude":34.019604, "longitude":-118.288796},
+  {"latitude":34.020204, "longitude":-118.286296},
+  {"latitude":34.018913, "longitude":-118.284544},
+  {"latitude":34.021736, "longitude":-118.282171},
+  {"latitude":34.020035, "longitude":-118.285801},
+  {"latitude":34.020601, "longitude":-118.286133},
+  {"latitude":34.021794, "longitude":-118.282790},
+  {"latitude":34.020549, "longitude":-118.288917},
+  {"latitude":34.021350, "longitude":-118.287179},
+  {"latitude":34.022623, "longitude":-118.286421},
+  {"latitude":34.023091, "longitude":-118.283533}
+]};
+
+window.localStorage.setItem("myData",JSON.stringify(data));
+
+//Plot points on the map
+var dataStored = JSON.parse(window.localStorage.getItem("myData"));
+
+var coordinates_array = dataStored.coordinates; 
+for(var i = 0; i <  coordinates_array.length; i++) { 
+  addMarker(coordinates_array[i].latitude, coordinates_array[i].longitude);
+}
+
+
+function initMap() {
+        map = new OpenLayers.Map('map');
+        basemap = new OpenLayers.Layer.OSM("Simple OSM Map");
+        map.addLayer(basemap);
+        markers = new OpenLayers.Layer.Markers("Markers");
+        map.addLayer(markers);
+        map.setCenter(
+            new OpenLayers.LonLat(-71.147, 42.472).transform(
+                new OpenLayers.Projection("EPSG:4326"),
+                map.getProjectionObject()
+            ), 15
+        );
+}
+
+
+function addMarker(latitude, longitude) {
+        var lonLat = new OpenLayers.LonLat(longitude, latitude)
+            .transform(
+                new OpenLayers.Projection("EPSG:4326"), 
+                map.getProjectionObject()
+        );
+        var point = new OpenLayers.Marker(lonLat);
+        markers.addMarker(point);
+        map.setCenter(lonLat, 60);
+}

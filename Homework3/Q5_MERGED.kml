@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.0">
+<Document>
+
+<Style id="z1">
+	<IconStyle>
+		<Icon>
+			<href>http://www.google.com/intl/en_us/mapfiles/ms/micons/blue-dot.png</href>
+		</Icon>
+	</IconStyle>
+</Style>
+
+<Folder id="Libraries">
+	<name>Libraries</name>
+	<visibility>1</visibility>
+	<open>0</open> 
+	<Placemark>
+		<name>Doheny Library</name>
+		<styleUrl>#z1</styleUrl>
+		<Point>
+			<coordinates>-118.283723,34.020038</coordinates>
+		</Point>
+	</Placemark>
+		
+	<Placemark>
+		<name>VKC Library</name>
+		<styleUrl>#z1</styleUrl>
+		<Point>
+			<coordinates>-118.284023,34.021239</coordinates>
+		</Point>
+	</Placemark>
+	
+	<Placemark>
+		<name>Leavey Library</name>
+		<styleUrl>#z1</styleUrl>
+		<Point>
+			<coordinates>-118.282958,34.021835</coordinates>
+		</Point>
+	</Placemark>
+	
+	<Placemark>
+		<name>Accounting Lib</name>
+		<styleUrl>#z1</styleUrl>
+		<Point>
+			<coordinates>-118.285565,34.019157</coordinates>
+		</Point>
+	</Placemark>
+	
+	<Placemark>
+		<name>Sci and Eng Lib</name>
+		<styleUrl>#z1</styleUrl>
+		<Point>
+			<coordinates>-118.288796,34.019604</coordinates>
+		</Point>
+	</Placemark>
+</Folder>
+
+<Folder id="Plaza">
+	<name>Plaza</name>
+	<visibility>0</visibility>
+	<open>0</open> 
+	
+	<Placemark>
+		<name>Martens Plaza</name>
+		<styleUrl>#z1</styleUrl>
+		<Point>
+			<coordinates>-118.282790,34.021794</coordinates>
+		</Point>
+	</Placemark>
+	
+	
+	<Placemark>
+		<name>Epstein Plaza</name>
+		<styleUrl>#z1</styleUrl>
+		<Point>
+			<coordinates>-118.288917,34.020549</coordinates>
+		</Point>
+	</Placemark>
+	
+	
+	<Placemark>
+		<name>Meyer Plaza</name>
+		<styleUrl>#z1</styleUrl>
+		<Point>
+			<coordinates>-118.287179, 34.021350</coordinates>
+		</Point>
+	</Placemark>
+	
+	
+	<Placemark>
+		<name>Noble Plaza</name>
+		<styleUrl>#z1</styleUrl>
+		<Point>
+			<coordinates>-118.286421,34.022623</coordinates>
+		</Point>
+	</Placemark>
+	
+	
+	<Placemark>
+		<name>Gavin H. Plaza</name>
+		<styleUrl>#z1</styleUrl>
+		<Point>
+			<coordinates>-118.283533,34.023091</coordinates>
+		</Point>
+	</Placemark>
+</Folder>
+
+<Folder id="Dining">
+	<name>Dining</name>
+	<visibility>0</visibility>
+	<open>0</open> 
+	
+	<Placemark>
+		<name>Coffee Bean</name>
+		<styleUrl>#z1</styleUrl>
+		<Point>
+			<coordinates>-118.286296,34.020204</coordinates>
+		</Point>
+	</Placemark>
+	
+	<Placemark>
+		<name>Law School Cafe</name>
+		<styleUrl>#z1</styleUrl>
+		<Point>
+			<coordinates>-118.284544,34.018913</coordinates>
+		</Point>
+	</Placemark>
+	
+	
+	<Placemark>
+		<name>Starbucks</name>
+		<styleUrl>#z1</styleUrl>
+		<Point>
+			<coordinates>-118.282171,34.021736</coordinates>
+		</Point>
+	</Placemark>
+	
+	
+	<Placemark>
+		<name>Pizza Kitchen</name>
+		<styleUrl>#z1</styleUrl>
+		<Point>
+			<coordinates>-118.285801,34.020035</coordinates>
+		</Point>
+	</Placemark>
+	
+	
+	<Placemark>
+		<name>Lemonade</name>
+		<styleUrl>#z1</styleUrl>
+		<Point>
+			<coordinates>-118.286133,34.020601</coordinates>
+		</Point>
+	</Placemark>
+</Folder>
+
+
+<Placemark>
+	<name>Convex Hull</name>
+	<Polygon>
+		<outerBoundaryIs>
+		  <LinearRing>
+			<coordinates> 
+			  -118.284544,34.018913	
+			  -118.288796,34.019604
+			  -118.288917,34.020549
+			  -118.286421,34.022623
+			  -118.283533,34.023091
+			  -118.282171,34.021736
+			  -118.284544,34.018913
+			</coordinates>
+		  </LinearRing>
+		</outerBoundaryIs>
+	</Polygon>
+	 <Style> 
+	  <PolyStyle>  
+		<color>#a00000ff</color>
+		<outline>0</outline>
+	  </PolyStyle> 
+	 </Style>
+</Placemark>
+
+
+
+<Placemark>
+	<name>Nearest Neighbour 1</name>
+	<LineString>
+		<coordinates>
+			-118.286133,34.020601
+			-118.286296,34.020204
+		</coordinates>
+	</LineString>
+</Placemark>
+
+
+<Placemark>
+	<name>Nearest Neighbour 2</name>
+	<LineString>
+		<coordinates>
+			-118.286133,34.020601
+			-118.285801,34.020035
+		</coordinates>
+	</LineString>
+</Placemark>
+
+
+<Placemark>
+	<name>Nearest Neighbour 3</name>
+	<LineString>
+		<coordinates>
+			-118.286133,34.020601
+			-118.287179,34.02135
+		</coordinates>
+	</LineString>
+</Placemark>
+
+
+<Placemark>
+	<name>Nearest Neighbour 4</name>
+	<LineString>
+		<coordinates>
+			-118.286133,34.020601
+			-118.285565,34.019157
+		</coordinates>
+	</LineString>
+</Placemark>
+
+
+</Document>
+</kml>
